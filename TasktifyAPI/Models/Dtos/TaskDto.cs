@@ -11,8 +11,5 @@ namespace TasktifyAPI.Models.Dtos
 
         [Required]
         public string Description { get; set; }
-
-        // Foreign
-        public int UserId { get; set; }
     }
 }

@@ -36,7 +36,6 @@ namespace TasktifyAPI.Services.Services
                 TaskId = createdTask.TaskId,
                 TaskName = createdTask.TaskName,
                 Description = createdTask.Description,
-                UserId = createdTask.UserId,
             };
         }
 
@@ -55,7 +54,6 @@ namespace TasktifyAPI.Services.Services
                 TaskId = task.TaskId,
                 TaskName = task.TaskName,
                 Description = task.Description,
-                UserId = task.UserId,
             };
         }
 
@@ -71,7 +69,6 @@ namespace TasktifyAPI.Services.Services
                 TaskId = task.TaskId,
                 TaskName = task.TaskName,
                 Description = task.Description,
-                UserId = task.UserId,
             });
         }
 
@@ -89,7 +86,6 @@ namespace TasktifyAPI.Services.Services
                 TaskId = taskdto.TaskId,
                 TaskName = taskdto.TaskName,
                 Description = taskdto.Description,
-                UserId = taskdto.UserId,
             };
 
             return await _taskRepository.UpdateTaskAsync(task, taskId);
@@ -118,7 +114,6 @@ namespace TasktifyAPI.Services.Services
                 TaskId = task.TaskId,
                 TaskName = task.TaskName,
                 Description = task.Description,
-                UserId = task.UserId,
             });
         }
     }

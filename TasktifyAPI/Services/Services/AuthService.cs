@@ -116,7 +116,6 @@ namespace TasktifyAPI.Services.Services
                     TaskId = task.TaskId,
                     TaskName = task.TaskName,
                     Description = task.Description,
-                    UserId = task.UserId
                 }).ToList()
             };
         }
